@@ -1,0 +1,106 @@
+/* styling */
+body {
+  background-color: rgb(143, 213, 237);
+  margin: auto;
+  padding: auto;
+  text-align: center;
+  zoom: 0.9;
+}
+
+
+.title {
+  color:rgb(239, 143, 230);
+  font-style: italic;
+  margin-top: 50px;
+}
+
+.paragraph {
+  color: rgb(226, 134, 192);
+  margin-right: 60%;
+  margin-top: 10%;
+}
+
+.quote {
+  color: bisque;
+  background-color:rgb(239, 143, 230);
+  border: 50px solid rgb(239, 143, 230);
+  margin: 50px 80px;
+  border-radius: 70%;
+}
+
+/* flowers */
+.flower {
+  position: absolute;
+  top: -50px;
+  font-size:30px;
+  animation-name: fall, sway;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  opacity: 0.8;
+}
+
+@keyframes fall {
+  0% { top: -50px; }
+  100% { top: 100vh; }
+}
+
+@keyframes sway {
+  0% { transform: translateX(0px); }
+  50% { transform: translateX(30px); }
+  100% { transform: translateX(0px); }
+}
+
+🌸1 { left: 10%; animation-duration: 9s, 3s; animation-delay: 0s, 0s; }
+.🌸2 { left: 30%; animation-duration: 11s, 4s; animation-delay: 2s, 0s; }
+.🌸3 { left: 50%; animation-duration: 8s, 3s; animation-delay: 1s, 0s; }
+.🌸4 { left: 70%; animation-duration: 10s, 5s; animation-delay: 3s, 0s; }
+.🌸5 { left: 80%; animation-duration: 12s, 4s; animation-delay: 4s, 0s; }
+.🌸6 { left: 40%; animation-duration: 14s, 6s; animation-delay: 4s, 0s; }
+.🌸7 { left: 20%; animation-duration: 16s, 3s; animation-delay: 4s, 0s; }
+
+/* button */
+.bt {
+  background-color: rgb(232, 123, 219);
+  color: rgb(235, 215, 236);
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 40px;
+  padding-right: 40px;
+  border-radius: 30px;
+  border: 3px solid rgb(239, 143, 230);
+  font-style: italic;
+  font-size: 90%;
+}
+
+button:hover {
+  background-color: rgb(226, 134, 192);
+  color:whitesmoke;
+}
+
+/* responsive for mobiles */
+@media (max-width: 600px) {
+  .paragraph {
+    margin-right: 0;
+    margin-top: 5%;
+    padding: 10px;
+    font-size: 16px;
+  }
+
+  .quote {
+    margin: 20px;
+    padding: 20px;
+    font-size: 18px;
+    border-radius: 70px;
+  }
+
+  .bt {
+    font-size: 100%;
+    padding: 10px 30px;
+  }
+
+  .title {
+    font-size: 22px;
+    margin-top: 30px;
+  }
+}
+
